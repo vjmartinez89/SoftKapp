@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/basicMargin"
         android:src="@drawable/ic_back"
-        android:id="@+id/fab_hu3_back"
+        android:id="@+id/fab_hu3_conf_back"
         android:layout_gravity="bottom|left"
         android:layout_margin="@dimen/layout_padding"
         />

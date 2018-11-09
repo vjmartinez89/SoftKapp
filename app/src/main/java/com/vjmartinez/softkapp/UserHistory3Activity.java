@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.RadioButton;
 
@@ -29,6 +30,7 @@ public class UserHistory3Activity extends AppCompatActivity {
         forwardButton = (FloatingActionButton)findViewById(R.id.fab_hu3_next);
         txiName = (TextInputEditText)findViewById(R.id.txi_name);
         txiLastName = (TextInputEditText)findViewById(R.id.txi_last_name);
+        rMan = (RadioButton)findViewById(R.id.rb_man);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +51,14 @@ public class UserHistory3Activity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            go(ActivityExample.class);
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     /**
