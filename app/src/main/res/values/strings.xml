@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SoftKapp</string>
+    <string name="button_hu_2">Ir HU_2</string>
+    <string name="button_hu_3">Ir HU_3</string>
 </resources>
