@@ -2,4 +2,17 @@
     <string name="app_name">SoftKapp</string>
     <string name="button_hu_2">Ir HU_2</string>
     <string name="button_hu_3">Ir HU_3</string>
+    <string name="city">Ciudad:</string>
+    <string name="name">Nombre:</string>
+    <string name="last_name">Apellido:</string>
+    <string name="sex">Sexo:</string>
+    <string name="man">Hombre</string>
+    <string name="woman">Mujer</string>
+    <string name="confirm">Confirmar datos</string>
+    <string-array name="ciudades">
+        <item>Armenia</item>
+        <item>Bogotá</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+    </string-array>
 </resources>

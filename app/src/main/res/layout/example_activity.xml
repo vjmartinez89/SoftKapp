@@ -40,7 +40,6 @@
         android:id="@+id/flaButtonMainPage"
         android:layout_gravity="bottom|left"
         android:layout_margin="@dimen/layout_padding"
-        >
-    </android.support.design.widget.FloatingActionButton>
+        />
 
 </android.support.design.widget.CoordinatorLayout>

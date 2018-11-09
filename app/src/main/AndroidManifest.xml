@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vjmartinez.softkapp">
 
@@ -7,18 +8,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-
-        <activity android:name=".ActivityExample"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ActivityExample"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"></action>
-                <category android:name="android.intent.category.LAUNCHER"></category>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".FloatActivity"></activity>
-
+        <activity android:name=".FloatActivity" />
+        <activity android:name=".UserHistory2Activity" />
+        <activity android:name=".UserHistory3Activity" />
+        <activity android:name=".UserHistory3ConfActivity"></activity>
     </application>
 
 </manifest>

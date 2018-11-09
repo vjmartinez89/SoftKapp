@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHistory3ConfActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvi_sign_in_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:layout_gravity="bottom"
+            />
+
+        <TextView
+            android:id="@+id/tvi_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="@dimen/layout_padding"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:layout_gravity="bottom"
+            />
+
+        <TextView
+            android:id="@+id/tvi_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="@dimen/layout_padding"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:layout_gravity="bottom"
+            />
+
+        <TextView
+            android:id="@+id/tvi_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="@dimen/layout_padding"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/basicMargin"
+        android:src="@drawable/ic_back"
+        android:id="@+id/fab_hu3_back"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/layout_padding"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
