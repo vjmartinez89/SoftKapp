@@ -11,6 +11,7 @@
     <string name="confirm">Confirmar datos</string>
     <string name="hu01_msg">Hola estoy en la HU1</string>
     <string-array name="ciudades">
+        <item>Seleccione</item>
         <item>Armenia</item>
         <item>Bogotá</item>
         <item>Cali</item>

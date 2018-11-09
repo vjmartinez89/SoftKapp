@@ -38,6 +38,7 @@ public class UserHistory2Activity extends AppCompatActivity {
         spinnerCity.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item,
                 getResources().getStringArray(R.array.ciudades)));
+        ((ArrayAdapter)spinnerCity.getAdapter()).setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     }
 
 
@@ -46,17 +47,24 @@ public class UserHistory2Activity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
-                    case 0: //Armenia
+                    case 0:
+                        imgCity.setVisibility(View.INVISIBLE);
+                        break;
+                    case 1: //Armenia
                         imgCity.setImageResource(R.drawable.ar);
+                        imgCity.setVisibility(View.VISIBLE);
                         break;
-                    case 1: //Bogota
+                    case 2: //Bogota
                         imgCity.setImageResource(R.drawable.bo);
+                        imgCity.setVisibility(View.VISIBLE);
                         break;
-                    case 2: //Cali
+                    case 3: //Cali
                         imgCity.setImageResource(R.drawable.ca);
+                        imgCity.setVisibility(View.VISIBLE);
                         break;
-                    case 3: //Barranquilla
+                    case 4: //Barranquilla
                         imgCity.setImageResource(R.drawable.ba);
+                        imgCity.setVisibility(View.VISIBLE);
                         break;
                     default:
                         imgCity.setVisibility(View.INVISIBLE);
