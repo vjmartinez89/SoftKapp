@@ -17,7 +17,8 @@
                 android:id="@+id/txi_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/name"/>
+                android:hint="@string/name"
+                android:textSize="@dimen/text_size"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -27,13 +28,16 @@
                 android:id="@+id/txi_last_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/last_name"/>
+                android:hint="@string/last_name"
+                android:textSize="@dimen/text_size"/>
         </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sex"/>
+            android:text="@string/sex"
+            android:textSize="@dimen/text_size"/>
+
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +46,8 @@
                 android:id="@+id/rb_man"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/man"/>
+                android:text="@string/man"
+                android:checked="true"/>
             <RadioButton
                 android:id="@+id/rb_woman"
                 android:layout_width="wrap_content"
