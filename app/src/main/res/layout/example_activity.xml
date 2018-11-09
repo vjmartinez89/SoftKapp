@@ -10,7 +10,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding">
+
         <Button
             android:id="@+id/btn_go_hu2"
             android:layout_width="match_parent"
@@ -21,6 +23,7 @@
             android:textColor="@color/colorWhite"
             android:layout_marginTop="@dimen/layout_padding"
             android:layout_marginBottom="@dimen/layout_padding"/>
+
         <Button
             android:id="@+id/btn_go_hu3"
             android:layout_width="match_parent"
@@ -29,6 +32,7 @@
             android:textAllCaps="false"
             android:background="@color/colorPurple"
             android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/layout_padding"
             android:layout_marginBottom="@dimen/layout_padding"/>
     </LinearLayout>
 
@@ -37,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/basicMargin"
         android:src="@drawable/ic_back"
-        android:id="@+id/flaButtonMainPage"
+        android:id="@+id/fab_hu1"
         android:layout_gravity="bottom|left"
         android:layout_margin="@dimen/layout_padding"
         />

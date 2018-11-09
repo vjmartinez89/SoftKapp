@@ -24,16 +24,24 @@ public class UserHistory2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_history2);
         initComponents();
+        initAdapters();
+        initEvents();
     }
 
     private void initComponents() {
         spinnerCity = (Spinner)findViewById(R.id.spn_city);
         imgCity = (ImageView)findViewById(R.id.img_city);
         backButton = (FloatingActionButton)findViewById(R.id.fab_hu2_back);
+    }
 
+    private void initAdapters() {
         spinnerCity.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item,
                 getResources().getStringArray(R.array.ciudades)));
+    }
+
+
+    private void initEvents() {
         spinnerCity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -53,7 +61,6 @@ public class UserHistory2Activity extends AppCompatActivity {
                     default:
                         imgCity.setVisibility(View.INVISIBLE);
                         break;
-
                 }
             }
 

@@ -9,6 +9,7 @@
     <string name="man">Hombre</string>
     <string name="woman">Mujer</string>
     <string name="confirm">Confirmar datos</string>
+    <string name="hu01_msg">Hola estoy en la HU1</string>
     <string-array name="ciudades">
         <item>Armenia</item>
         <item>Bogotá</item>
