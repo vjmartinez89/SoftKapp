@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ActivityExample"
+            android:name=".LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,8 @@
         <activity android:name=".FloatActivity" />
         <activity android:name=".UserHistory2Activity" />
         <activity android:name=".UserHistory3Activity" />
-        <activity android:name=".UserHistory3ConfActivity"></activity>
+        <activity android:name=".UserHistory3ConfActivity" />
+        <activity android:name=".ActivityExample"/>
     </application>
 
 </manifest>

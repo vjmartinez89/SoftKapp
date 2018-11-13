@@ -8,13 +8,17 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.vjmartinez.softkapp.utils.Util;
 
 public class ActivityExample extends AppCompatActivity{
 
     private Button btnGoHu2;
     private Button btnGoHu3;
     private FloatingActionButton fabHu1;
+    private TextView tviUserData;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,6 +26,18 @@ public class ActivityExample extends AppCompatActivity{
         setContentView(R.layout.example_activity);
         initComponents();
         intiEvents();
+        initActivity();
+    }
+
+
+    /**
+     * Validate intent parameters
+     */
+    private void initActivity(){
+        Intent parentIntent = getIntent();
+        if(parentIntent != null && parentIntent.getStringExtra(Util.USER_NAME) != null){
+            tviUserData.setText("Bienvenido: " + parentIntent.getStringExtra(Util.USER_NAME));
+        }
     }
 
     /**
@@ -31,6 +47,7 @@ public class ActivityExample extends AppCompatActivity{
         btnGoHu2 = (Button)findViewById(R.id.btn_go_hu2);
         btnGoHu3 =  (Button)findViewById(R.id.btn_go_hu3);
         fabHu1 = (FloatingActionButton)findViewById(R.id.fab_hu1);
+        tviUserData = (TextView)findViewById(R.id.tvi_user_data);
     }
 
     /**
@@ -60,7 +77,8 @@ public class ActivityExample extends AppCompatActivity{
         fabHu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ActivityExample.this, R.string.hu01_msg, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getBaseContext(), LoginActivity.class));
+                finish();
             }
         });
 

@@ -8,8 +8,13 @@
     <string name="sex">Sexo:</string>
     <string name="man">Hombre</string>
     <string name="woman">Mujer</string>
+    <string name="user_name">Usuario:</string>
+    <string name="password">Contraseña:</string>
     <string name="confirm">Confirmar datos</string>
     <string name="hu01_msg">Hola estoy en la HU1</string>
+    <string name="name_invalid">Ingrese el nombre</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="mandatory_data_login">El nombre de usuario y contraseña son obligatorios</string>
     <string-array name="ciudades">
         <item>Seleccione</item>
         <item>Armenia</item>

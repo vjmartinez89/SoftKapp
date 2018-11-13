@@ -8,6 +8,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import com.vjmartinez.softkapp.utils.Util;
+
 public class UserHistory3ConfActivity extends AppCompatActivity {
 
     private TextView tviName;
@@ -25,11 +27,13 @@ public class UserHistory3ConfActivity extends AppCompatActivity {
         tviSex = (TextView)findViewById(R.id.tvi_sex);
         backButton = (FloatingActionButton)findViewById(R.id.fab_hu3_conf_back);
 
+        initActivity();
+
         Bundle extras = getIntent().getExtras();
         if (extras != null && !extras.isEmpty()) {
-            fillText(extras,"NAME",tviName);
-            fillText(extras,"LAST_NAME",tviLastName);
-            fillText(extras,"SEX",tviSex);
+            fillText(extras, Util.NAME, tviName);
+            fillText(extras,Util.LAST_NAME, tviLastName);
+            fillText(extras,Util.SEX, tviSex);
         }
 
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +44,17 @@ public class UserHistory3ConfActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+
+    /**
+     * Validate intent parameters
+     */
+    private void initActivity(){
+        Intent parentIntent = getIntent();
+        if(parentIntent != null){
+
+        }
     }
 
     @Override
