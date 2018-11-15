@@ -40,6 +40,18 @@
             android:textColor="@color/colorWhite"
             android:layout_marginTop="@dimen/layout_padding"
             android:layout_marginBottom="@dimen/layout_padding"/>
+
+        <Button
+            android:id="@+id/btn_go_hu4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_hu_4"
+            android:textAllCaps="false"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:layout_marginBottom="@dimen/layout_padding"/>
+
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton

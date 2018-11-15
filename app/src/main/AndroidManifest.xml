@@ -22,7 +22,8 @@
         <activity android:name=".UserHistory2Activity" />
         <activity android:name=".UserHistory3Activity" />
         <activity android:name=".UserHistory3ConfActivity" />
-        <activity android:name=".ActivityExample"/>
+        <activity android:name=".ActivityExample" />
+        <activity android:name=".UserHistory4Activity"></activity>
     </application>
 
 </manifest>

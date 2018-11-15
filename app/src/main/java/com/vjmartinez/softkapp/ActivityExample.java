@@ -17,6 +17,7 @@ public class ActivityExample extends AppCompatActivity{
 
     private Button btnGoHu2;
     private Button btnGoHu3;
+    private Button btnGoHu4;
     private FloatingActionButton fabHu1;
     private TextView tviUserData;
 
@@ -46,6 +47,7 @@ public class ActivityExample extends AppCompatActivity{
     private void initComponents() {
         btnGoHu2 = (Button)findViewById(R.id.btn_go_hu2);
         btnGoHu3 =  (Button)findViewById(R.id.btn_go_hu3);
+        btnGoHu4 = (Button)findViewById(R.id.btn_go_hu4);
         fabHu1 = (FloatingActionButton)findViewById(R.id.fab_hu1);
         tviUserData = (TextView)findViewById(R.id.tvi_user_data);
     }
@@ -69,6 +71,15 @@ public class ActivityExample extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getBaseContext(), UserHistory3Activity.class));
+                finish();
+            }
+        });
+
+        //Go to user history 4
+        btnGoHu4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getBaseContext(), UserHistory4Activity.class));
                 finish();
             }
         });
