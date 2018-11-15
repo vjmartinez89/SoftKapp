@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.vjmartinez.softkapp.dto.UserDTO;
 import com.vjmartinez.softkapp.utils.Util;
 
 public class ActivityExample extends AppCompatActivity{
@@ -18,6 +19,7 @@ public class ActivityExample extends AppCompatActivity{
     private Button btnGoHu2;
     private Button btnGoHu3;
     private Button btnGoHu4;
+    private Button btnGoHu5;
     private FloatingActionButton fabHu1;
     private TextView tviUserData;
 
@@ -36,18 +38,21 @@ public class ActivityExample extends AppCompatActivity{
      */
     private void initActivity(){
         Intent parentIntent = getIntent();
-        if(parentIntent != null && parentIntent.getStringExtra(Util.USER_NAME) != null){
-            tviUserData.setText("Bienvenido: " + parentIntent.getStringExtra(Util.USER_NAME));
+        if(parentIntent != null && parentIntent.getSerializableExtra(Util.USER) != null){
+            UserDTO userDTO = (UserDTO)parentIntent.getSerializableExtra(Util.USER);
+            tviUserData.setText("Bienvenido: " + userDTO.getName());
         }
     }
 
     /**
      * Initialize view components
      */
+
     private void initComponents() {
         btnGoHu2 = (Button)findViewById(R.id.btn_go_hu2);
         btnGoHu3 =  (Button)findViewById(R.id.btn_go_hu3);
-        btnGoHu4 = (Button)findViewById(R.id.btn_go_hu4);
+        btnGoHu4 =  (Button)findViewById(R.id.btn_go_hu4);
+        btnGoHu5 =  (Button)findViewById(R.id.btn_go_hu5);
         fabHu1 = (FloatingActionButton)findViewById(R.id.fab_hu1);
         tviUserData = (TextView)findViewById(R.id.tvi_user_data);
     }
@@ -80,6 +85,15 @@ public class ActivityExample extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getBaseContext(), UserHistory4Activity.class));
+                finish();
+            }
+        });
+
+        //Go to user history 5
+        btnGoHu5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getBaseContext(), FragmentActivity.class));
                 finish();
             }
         });

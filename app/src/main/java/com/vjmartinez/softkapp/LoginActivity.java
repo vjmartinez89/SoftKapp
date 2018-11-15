@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.vjmartinez.softkapp.dto.UserDTO;
 import com.vjmartinez.softkapp.utils.Util;
 
 public class LoginActivity extends AppCompatActivity {
@@ -48,8 +49,11 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }else{
                     Bundle extras = new Bundle();
-                    extras.putString(Util.USER_NAME, String.valueOf(txiUsername.getText()));
-                    extras.putString(Util.PASSWORD,String.valueOf(txiPassword.getText()));
+                    UserDTO userDTO = new UserDTO();
+                    userDTO.setName(String.valueOf(txiUsername.getText()));
+                    userDTO.setPassword(String.valueOf(txiPassword.getText()));
+                    extras.putSerializable(Util.USER, userDTO /* String.valueOf(txiUsername.getText())*/);
+                  //  extras.putString(Util.PASSWORD,String.valueOf(txiPassword.getText()));
                     go(ActivityExample.class, extras);
                 }
             }

@@ -23,7 +23,8 @@
         <activity android:name=".UserHistory3Activity" />
         <activity android:name=".UserHistory3ConfActivity" />
         <activity android:name=".ActivityExample" />
-        <activity android:name=".UserHistory4Activity"></activity>
+        <activity android:name=".UserHistory4Activity" />
+        <activity android:name=".FragmentActivity"></activity>
     </application>
 
 </manifest>

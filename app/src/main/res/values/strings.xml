@@ -20,6 +20,7 @@
     <string name="tab_uno">Tab 1</string>
     <string name="tab_dos">Tab 2</string>
     <string name="tab_tres">Tab 3</string>
+    <string name="button_hu_5">Ir HU_5</string>
     <string-array name="ciudades">
         <item>Seleccione</item>
         <item>Armenia</item>

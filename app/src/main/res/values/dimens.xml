@@ -5,4 +5,7 @@
     <dimen name="img_margin_top">20dp</dimen>
     <dimen name="text_size">16sp</dimen>
     <dimen name="important_text_size">20sp</dimen>
+    <dimen name="app_bar_height">100dp</dimen>
+    <dimen name="img_left_margin">11sp</dimen>
+    <dimen name="img_top_margin">15sp</dimen>
 </resources>
